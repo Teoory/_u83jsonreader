@@ -29,9 +29,6 @@ $(document).ready(function() {
             }
           });
         }
-      },
-      error: function(xhr, status, error) {
-        console.error(status + ": " + error);
       }
     });
   });
