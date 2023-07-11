@@ -1,0 +1,65 @@
+@import url(https://fonts.googleapis.com/css?family=Exo);
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #2623d5, #8023d5);
+	background-size: 400% 400%;
+	height: 100vh;
+	animation: gradient 15s ease infinite;
+}
+
+h1 {
+    font-family: exo, ubuntu;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    font-family: exo;
+    background-color: #46b6c5;
+    font-weight: bold;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #dddddd;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#arama-input {
+    margin-right: 10px;
+}
+
+#arama-butonu {
+    padding: 5px 10px;
+}
+
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
