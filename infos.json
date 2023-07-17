@@ -1,0 +1,47 @@
+[
+    {
+      "_id": "AdminID",
+      "_badge": "DEVELOPER",
+      "picture": "https://robohash.org/estetdicta.png?size=128x128&set=set1",
+      "name": "Berkay",
+      "surname": "Köksal",
+      "gender": "male",
+      "email": "berkay.koksall54@gmail.com"
+    },
+    {
+      "_id": "AdminID",
+      "_badge": "DEVELOPER",
+      "picture": "https://robohash.org/dictanullarepudiandae.png?size=128x128&set=set1",
+      "name": "Gülce",
+      "surname": "Çapak",
+      "gender": "female",
+      "email": "gulcecapak@gmail.com"
+    },
+    {
+      "_id": "AdminID",
+      "_badge": "DEVELOPER",
+      "picture": "https://robohash.org/voluptatemetiste.png?size=128x128&set=set1",
+      "name": "Mustafa",
+      "surname": "Yanardağ",
+      "gender": "male",
+      "email": "m.uguryanardag@gmail.com"
+    },
+    {
+      "_id": "AdminID",
+      "_badge": "DEVELOPER",
+      "picture": "https://robohash.org/quiquialaborum.png?size=128x128&set=set1",
+      "name": "Onuralp",
+      "surname": "Yılkın",
+      "gender": "male",
+      "email": "onuralpyilkin@gmail.com"
+    },
+    {
+      "_id": "AdminID",
+      "_badge": "DEVELOPER",
+      "picture": "https://robohash.org/etminusaut.png?size=128x128&set=set1",
+      "name": "Veysel Enes",
+      "surname": "Yiğitoğlu",
+      "gender": "male",
+      "email": " "
+    }
+]

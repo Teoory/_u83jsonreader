@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>U-83 Game Datas</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="shortcut icon" type="image/png" href="logo.jpg"/>
+  <link rel="stylesheet" href="./src/css/dataStyle.css">
+  <link rel="stylesheet" href="./src/css/navbar.css">
+</head>
+<body>
+  <div class="content">
+    <!-- Start-Navbar -->
+    <div >
+        <nav class="navbar" id="navbar">
+          <div class="navbar-container container">
+              <input type="checkbox" name="" id="">
+              <div class="hamburger-lines">
+                  <span class="line line1"></span>
+                  <span class="line line2"></span>
+                  <span class="line line3"></span>
+              </div>
+              <ul class="menu-items">
+                <li> <a onClick="window.location.reload()" href="./index.html" class="li-item">Home</a> </li>
+                <li> <a class="li-item" href="./datas.html">Datas</a> </li>
+                <li> <a class="li-item" href="/index.html#Cards-Content">Team</a> </li>
+                <li> <a class="li-item" href="/index.html#referanslarımız">Supporters</a> </li>
+                <li> <a class="li-item" href="#">Contacts</a> </li>
+              </ul>
+          </div>
+        </nav>
+    </div>
+    <!-- End-Navbar -->
+
+    <h1>U83 kullanıcı verileri</h1>
+
+    <input type="text" id="arama-input" placeholder="ID'nizi girin...">
+    <button id="arama-butonu">Ara</button>
+
+    <table id="veri-tablosu">
+      <thead>
+        <tr>
+          <th>Sıralama</th>
+          <th>ID</th>
+          <th>BestComboCount</th>
+          <th>TotalHitCount</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <script src="./src/js/script.js"></script>
+</body>
+</html>

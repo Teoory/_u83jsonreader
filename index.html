@@ -1,31 +1,117 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>U-83 Game Datas</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="/style.css">
-  <link rel="shortcut icon" type="image/png" href="logo.jpg"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U-83 Website</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- ajax -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./src/css/navbar.css">
+    <link rel="stylesheet" href="./src/css/style.css">
 </head>
 <body>
-    <h1>U83 kullanıcı verileri</h1>
   
-    <input type="text" id="arama-input" placeholder="ID'nizi girin...">
-    <button id="arama-butonu">Ara</button>
-  
-    <table id="veri-tablosu">
-      <thead>
-        <tr>
-          <th>Sıralama</th>
-          <th>ID</th>
-          <th>BestComboCount</th>
-          <th>TotalHitCount</th>
-        </tr>
-      </thead>
-      <tbody></tbody>
-    </table>
+  <div class="content">
+    <!-- Start Navbar -->
+    <div >
+      <nav class="navbar" id="navbar">
+          <div class="navbar-container container">
+              <input type="checkbox" name="" id="">
+              <div class="hamburger-lines">
+                  <span class="line line1"></span>
+                  <span class="line line2"></span>
+                  <span class="line line3"></span>
+              </div>
+              <ul class="menu-items">
+                <li> <a onClick="window.location.reload()" href="./index.html" class="li-item">Home</a> </li>
+                <li> <a class="li-item" href="./datas.html">Datas</a> </li>
+                <li> <a class="li-item" href="/index.html#Cards-Content">Team</a> </li>
+                <li> <a class="li-item" href="/index.html#referanslarımız">Supporters</a> </li>
+                <li> <a class="li-item" href="#">Contacts</a> </li>
+              </ul>
+          </div>
+      </nav>
+    </div>
+    <!-- End Navbar -->
 
-    
+
+
   
-    <script src="script.js"></script>
-  </body>
-  </html>
+    <!-- Start page-top -->
+    <div class="page-top">
+      <div id='show_bg_2'></div>
+      <div class="bottom-left">
+          <h1>GAME DESCRIPTION</h1>
+          <a class="li-item" href="/index.html#ac" style="font-size: 14px; font-weight:500;">more details →</a>
+          <h1>________________________</h1>
+          <h1>DEVELOPERS</h1>
+          <a class="li-item" href="/index.html#Cards-Content" style="font-size: 14px; font-weight:500;">more details →</a>
+      </div>
+    </div>
+    <!-- End page-top -->
+
+    <!-- Start Brands -->
+    <div id="referanslarımız" class="brands">
+      <a>
+        <h2>Supporters</h2>
+        <marquee direction=left max-width=1200px>
+          <img class="brand-img" src="https://user-images.githubusercontent.com/34205493/151398481-467956df-6170-4b0d-97db-cc2df56af90b.png" href="#">
+          <img class="brand-img" src="https://cdnv2.t3vakfi.org/media/images/9.png" href="#">
+          <img class="brand-img" src="https://i.hizliresim.com/656xvfo.png" style="padding: -40px;" href="#">
+          <img class="brand-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/CBDDO_logo.svg/2560px-CBDDO_logo.svg.png" href="#">
+        </marquee>
+      </a>
+    </div><!-- End Brands -->
+    
+    <!-- Start ac -->
+    <div class="ac-item" id="ac"> 
+      <h2 class="ac-name">GAME DESCRIPTION</h2>
+      <p>In this game where you will feel the pure hack-and-slash action,
+      and discover your purpose while fighting enemies the one hand.
+      Who are you, why are you here? Will you be able to find answers to your questions?
+      With its immersive story, stylistic graphic style, and fast mechanics, UNKNOWN 83 is here.</p>
+    </div>
+    <!-- End ac -->
+
+    <!-- Start Cards -->
+    <div id="Cards-Content">
+      <h2>Team</h2>
+      <div id="cards"></div>
+    </div>
+    <!-- End Cards -->
+
+
+    <div class="altkisim" style="padding-top: 40px;">
+      <footer class="footer">
+          <span>© 2023 U-83 Ekibi Tarafından Geliştirilmiştir. </span>
+      </footer>
+    </div>
+
+  </div>
+
+  <script src="./src/js/cardsScript.js"></script>
+
+  <script>
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+        document.getElementById("navbar").style.top = "0px";
+        document.getElementById("navbar").style.backgroundColor = "#444444";
+        // document.getElementById("logo").src = "/assets/Groupe 16.svg";
+      } else {
+        document.getElementById("navbar").style.top = "20px";
+        document.getElementById("navbar").style.background = "";
+        // document.getElementById("logo").src = "/assets/Groupe 7.svg";
+      }
+      if ( document.body.clientWidth < 768 ) {
+        document.getElementById("navbar").style.top = "0px";
+        document.getElementById("navbar").style.background = "rgb(0, 0, 0, 0.15)";
+      }
+    }
+</script>
+</body>
+</html>

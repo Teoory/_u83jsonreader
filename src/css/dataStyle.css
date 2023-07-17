@@ -13,9 +13,10 @@ body {
 h1 {
     font-family: exo, ubuntu;
     text-align: center;
-    margin-bottom: 20px;
+    margin: 35px 0px 20px 0px;
 }
 
+/* Table Start */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -49,6 +50,8 @@ tbody tr:nth-child(even) {
 #arama-butonu {
     padding: 5px 10px;
 }
+/* Table End */
+
 
 
 
