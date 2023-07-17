@@ -17,7 +17,7 @@
   <div class="content">
     <!-- Start Navbar -->
     <div >
-      <nav class="navbar" id="navbar">
+      <nav class="navbar" id="navbar" style="display: none;">
           <div class="navbar-container container">
               <input type="checkbox" name="" id="">
               <div class="hamburger-lines">
@@ -30,7 +30,6 @@
                 <li> <a class="li-item" href="./datas.html">Datas</a> </li>
                 <li> <a class="li-item" href="/index.html#Cards-Content">Team</a> </li>
                 <li> <a class="li-item" href="/index.html#referanslarımız">Supporters</a> </li>
-                <li> <a class="li-item" href="#">Contacts</a> </li>
               </ul>
           </div>
       </nav>
@@ -46,10 +45,10 @@
       <div class="bottom-left">
           <h1>GAME DESCRIPTION</h1>
           <a class="li-item" href="/index.html#ac" style="font-size: 14px; font-weight:500;">more details →</a>
-          <h1>________________________</h1>
+          <h1 style="color: white;">________________________</h1>
           <h1>DEVELOPERS</h1>
           <a class="li-item" href="/index.html#Cards-Content" style="font-size: 14px; font-weight:500;">more details →</a>
-          <h1>________________________</h1>
+          <h1 style="color: white;">________________________</h1>
           <h1>Player Datas</h1>
           <a class="li-item" href="./datas.html" style="font-size: 14px; font-weight:500;">more details →</a>
       </div>
@@ -104,13 +103,12 @@
     
     function scrollFunction() {
       if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+        document.getElementById("navbar").style.display = "block";
         document.getElementById("navbar").style.top = "0px";
         document.getElementById("navbar").style.backgroundColor = "#444444";
-        // document.getElementById("logo").src = "/assets/Groupe 16.svg";
       } else {
-        document.getElementById("navbar").style.top = "20px";
+        document.getElementById("navbar").style.display = "none";
         document.getElementById("navbar").style.background = "";
-        // document.getElementById("logo").src = "/assets/Groupe 7.svg";
       }
       if ( document.body.clientWidth < 768 ) {
         document.getElementById("navbar").style.top = "0px";

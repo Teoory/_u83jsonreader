@@ -24,7 +24,6 @@
                 <li> <a class="li-item" href="./datas.html">Datas</a> </li>
                 <li> <a class="li-item" href="/index.html#Cards-Content">Team</a> </li>
                 <li> <a class="li-item" href="/index.html#referanslarımız">Supporters</a> </li>
-                <li> <a class="li-item" href="#">Contacts</a> </li>
               </ul>
           </div>
         </nav>
@@ -50,5 +49,26 @@
   </div>
 
   <script src="./src/js/script.js"></script>
+
+  
+  <script>
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+        document.getElementById("navbar").style.top = "0px";
+        document.getElementById("navbar").style.backgroundColor = "#444444";
+        // document.getElementById("logo").src = "/assets/Groupe 16.svg";
+      } else {
+        document.getElementById("navbar").style.top = "20px";
+        document.getElementById("navbar").style.background = "";
+        // document.getElementById("logo").src = "/assets/Groupe 7.svg";
+      }
+      if ( document.body.clientWidth < 768 ) {
+        document.getElementById("navbar").style.top = "0px";
+        document.getElementById("navbar").style.background = "rgb(0, 0, 0, 0.15)";
+      }
+    }
+</script>
 </body>
 </html>
